@@ -8,11 +8,23 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import ErrorPage from './components/error';
 import Home from "./pages/home";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Banner from "./components/banner";
+import LogementsMenu from './components/logements-menu';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <>
+        <Header />
+        <Banner />
+        <Home />
+        <LogementsMenu />
+        <Footer />
+      </>
+    ),
     errorElement: <ErrorPage />,
   },
 ]);

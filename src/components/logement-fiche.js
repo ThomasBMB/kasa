@@ -1,9 +1,9 @@
 import React from "react";
 
-function logementfiche() {
+function LogementFiche() {
     return (
         <div>logementfiche</div>
     )
 }
 
-export default logementfiche
+export default LogementFiche
